@@ -7,7 +7,7 @@
 }
 
 .title {
-  color: var(--dark-gray-text) !important;
+  color: var(--dark_gray_text) !important;
   font-weight: bold !important;
   margin-bottom: 60px !important;
 }

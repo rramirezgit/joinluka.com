@@ -5,10 +5,6 @@
   z-index: 5 !important;
 }
 
-.logo {
-  object-fit: cover;
-}
-
 .list {
   display: flex;
   flex-direction: column;

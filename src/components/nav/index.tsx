@@ -10,8 +10,12 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import nav from "./nav.module.css";
 import { useState } from "react";
-import config from "@/const";
 import { useRouter } from "next/router";
+import logoWhite from "@/assets/logo-white.png";
+import logo from "@/assets/Logo.svg";
+import menuWhite from "@/assets/menu-white.svg";
+import menu from "@/assets/menu.svg";
+import Image from "next/image";
 
 interface Props {
   /**
@@ -133,7 +137,7 @@ const Nav = ({ window_, ButtonVariant, ButtonColor }: Props): JSX.Element => {
             onClick={handleLogo}
           >
             <Box
-              component={"img"}
+              component={Image}
               className={nav.logo}
               sx={{
                 cursor: "pointer",
@@ -141,11 +145,10 @@ const Nav = ({ window_, ButtonVariant, ButtonColor }: Props): JSX.Element => {
                   xs: "80px",
                   sm: "122px",
                 },
+                height: { xs: "29.46px", sm: "56px" },
                 objectFit: "contain",
               }}
-              src={`${config.UrlBaseImg}${
-                ButtonColor === "white" ? "Logo-white.png" : "Logo.svg"
-              }`}
+              src={ButtonColor === "white" ? logoWhite : logo}
               alt="Logo-Luka"
               onClick={() => router.push("/")}
             ></Box>
@@ -158,12 +161,8 @@ const Nav = ({ window_, ButtonVariant, ButtonColor }: Props): JSX.Element => {
             sx={{ display: { xs: "flex", sm: "flex", md: "none" } }}
           >
             <Box
-              component={"img"}
-              src={
-                ButtonColor === "white"
-                  ? `${config.UrlBaseImg}menu-white.svg`
-                  : `${config.UrlBaseImg}menu.svg`
-              }
+              component={Image}
+              src={ButtonColor === "white" ? menuWhite : menu}
               alt="menu"
             />
           </IconButton>

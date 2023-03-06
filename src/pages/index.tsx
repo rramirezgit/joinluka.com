@@ -1,10 +1,5 @@
 import Footer from "@/components/footer";
-// import Gateway from './gateway'
-// import OurProducts from './ourProducts'
-// import PaymentLink from './paymentLink'
-// import World from './world'
-// import VPOS from './VPOS'
-// import WhyUs from './whyUs'
+
 import style from "./landing.module.css";
 import { Box } from "@mui/material";
 import Home from "@/components/templates/landing/home";
