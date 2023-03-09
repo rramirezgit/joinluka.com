@@ -13,8 +13,8 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import logoWhite from "@/assets/logo-white.png";
 import logo from "@/assets/Logo.svg";
-import menuWhite from "@/assets/menu-white.svg";
-import menu from "@/assets/menu.svg";
+import MenuWhite from "@/assets/menu-white.svg";
+import Menu from "@/assets/menu.svg";
 import Image from "next/image";
 
 interface Props {
@@ -148,6 +148,8 @@ const Nav = ({ window_, ButtonVariant, ButtonColor }: Props): JSX.Element => {
                 height: { xs: "29.46px", sm: "56px" },
                 objectFit: "contain",
               }}
+              width={122}
+              height={56}
               src={ButtonColor === "white" ? logoWhite : logo}
               alt="Logo-Luka"
               onClick={() => router.push("/")}
@@ -162,7 +164,7 @@ const Nav = ({ window_, ButtonVariant, ButtonColor }: Props): JSX.Element => {
           >
             <Box
               component={Image}
-              src={ButtonColor === "white" ? menuWhite : menu}
+              src={ButtonColor === "white" ? MenuWhite : Menu}
               alt="menu"
             />
           </IconButton>
