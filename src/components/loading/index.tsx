@@ -1,35 +1,15 @@
 import "./loading.module.css";
+import Lottie from "lottie-react";
+import animation from "@/assets/loading_blue.json";
 
-interface Props {
-  size: number;
-  firstColor: string;
-  secondColor: string;
-  border: number;
-}
-
-const Loading = ({
-  size,
-  firstColor,
-  secondColor,
-  border,
-}: Props): JSX.Element => {
-  const bodyStyles = document.body.style;
-  if (size) {
-    bodyStyles.setProperty("--size", `${size}px`);
-  }
-  if (firstColor) {
-    bodyStyles.setProperty("--first_border_color", firstColor);
-  }
-  if (secondColor) {
-    bodyStyles.setProperty("--second_border_color", secondColor);
-  }
-  if (border) {
-    bodyStyles.setProperty("--border_size", `${border}px`);
-  }
+const Loading = (): JSX.Element => {
   return (
-    <div className="loading inside">
-      <div></div>
-    </div>
+    <Lottie
+      style={{
+        width: "25%",
+      }}
+      animationData={animation}
+    />
   );
 };
 

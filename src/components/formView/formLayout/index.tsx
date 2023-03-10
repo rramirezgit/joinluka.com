@@ -36,12 +36,7 @@ const FormLayout = ({
             height: "calc(100% - 80px)",
           }}
         >
-          <Loading
-            border={8}
-            firstColor={colors.primary_buttons}
-            secondColor={colors.primary_buttons}
-            size={100}
-          />
+          <Loading />
           <Typography
             className={styles.text}
             sx={{

@@ -9,6 +9,10 @@
 
 body {
   height: 100%;
+  --first-border-color: var(--primary);
+  --second-border-color: var(--background);
+  --border-size: 0.3rem;
+  --size: 2.5rem;
 }
 
 html {

@@ -118,7 +118,7 @@ const SalesForm = ({
                 "https://bspaycoapi-qa.payco.net.ve/api/v1/email",
                 {
                   From: "noreply@lukapay.io",
-                  To: "sales@lukapay.io",
+                  To: /* "sales@lukapay.io" */ "amena@lukapay.io",
                   Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
                   Body: `
                       El cliente ${values.name} ${

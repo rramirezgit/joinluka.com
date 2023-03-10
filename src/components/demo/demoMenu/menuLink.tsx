@@ -20,14 +20,14 @@ const MenuLink = ({ type }: Props): JSX.Element => {
       <Box
         component={"figure"}
         sx={{
-          width: "165px",
+          height: "38px",
           marginBottom: "50px",
           padding: "0 40px",
           cursor: "pointer",
         }}
         onClick={handleLogo}
       >
-        <Image src={Logo} style={{ maxWidth: "100%" }} alt="Luka" />
+        <Image src={Logo} style={{ maxHeight: "100%" }} alt="Luka" />
       </Box>
       <Box className={styles["overflow-container"]}>
         <Typography

@@ -1,9 +1,3 @@
-body {
-  --first-border-color: var(--primary);
-  --second-border-color: var(--background);
-  --border-size: 0.3rem;
-  --size: 2.5rem;
-}
 @keyframes loading {
   0% {
     -webkit-transform: translate(0%, 0%) rotate(0deg);

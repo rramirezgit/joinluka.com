@@ -57,7 +57,7 @@ const CustomizationLink = ({ type }: Props): JSX.Element => {
       <Box className={styles["title-icon"]}>
         <Box component={"figure"} className={styles["title-figure"]}>
           <Image
-            src={menuImgs.setting}
+            src={menuImgs.settings}
             alt="Logo"
             style={{ maxHeight: "100%", maxWidth: "100%" }}
           />
