@@ -15,10 +15,17 @@ interface Props {
   check: boolean;
 }
 
+const styleCard = {
+  background: "var(--white) !important",
+  backgroundRepeat: "no-repeat !important",
+  backgroundPosition: "center !important",
+  backgroundSize: "100% 100% !important",
+};
+
 const PayCard = ({
   type,
   label,
-  img="",
+  img = "",
   shape = "",
   check,
   text,
@@ -27,13 +34,7 @@ const PayCard = ({
     <Box
       className={styles.container}
       id={"paycard-container"}
-      sx={{
-        backgroundImage:
-          type === "card" ? `url(${PaymentImgs.card}) !important` : "none",
-        backgroundRepeat: type === "card" ? "no-repeat !important" : "none",
-        backgroundPosition: type === "card" ? "center !important" : "none",
-        backgroundSize: type === "card" ? "100% 100% !important" : "none",
-      }}
+      sx={type === "card" ? {} : styleCard}
     >
       {type === "card" ? (
         <Box
