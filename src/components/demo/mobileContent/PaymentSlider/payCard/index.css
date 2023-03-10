@@ -9,6 +9,8 @@
     #paycard-shape {
         height: 65px !important;
         min-height: 65px !important;
+        width: 36.82px !important;
+        min-width: 36.82px !important;
     }
     #paycard-text {
         font-size: 8px !important;
@@ -64,6 +66,8 @@
     #paycard-shape {
         height: 80px !important;
         min-height: 80px !important;
+        width: 45.32px !important;
+        min-width: 45.32px !important;
     }
     #paycard-text {
         font-size: 10px !important;
@@ -119,6 +123,8 @@
     #paycard-shape {
         height: 100px !important;
         min-height: 100px !important;
+        width: 56.65px !important;
+        min-width: 56.65px !important;
     }
     #paycard-text {
         font-size: 12px !important;
@@ -174,6 +180,8 @@
     #paycard-shape {
         height: 125px !important;
         min-height: 125px !important;
+        width: 70.82px !important;
+        min-width: 70.82px !important;
     }
     #paycard-text {
         font-size: 14px !important;
@@ -229,6 +237,8 @@
     #paycard-shape {
         height: 140px !important;
         min-height: 140px !important;
+        width: 79.32px !important;
+        min-width: 79.32px !important;
     }
     #paycard-text {
         font-size: 15px !important;
@@ -284,6 +294,8 @@
     #paycard-shape {
         height: 150px !important;
         min-height: 150px !important;
+        width: 85px !important;
+        min-width: 85px !important;
     }
     #paycard-text {
         font-size: 17px !important;
@@ -340,6 +352,8 @@
     #paycard-shape {
         height: 65px !important;
         min-height: 65px !important;
+        width: 36.82px !important;
+        min-width: 36.82px !important;
     }
     #paycard-text {
         font-size: 8px !important;
@@ -395,6 +409,8 @@
     #paycard-shape {
         height: 80px !important;
         min-height: 80px !important;
+        width: 45.32px !important;
+        min-width: 45.32px !important;
     }
     #paycard-text {
         font-size: 10px !important;
@@ -450,6 +466,8 @@
     #paycard-shape {
         height: 100px !important;
         min-height: 100px !important;
+        width: 56.65px !important;
+        min-width: 56.65px !important;
     }
     #paycard-text {
         font-size: 12px !important;
@@ -505,6 +523,8 @@
     #paycard-shape {
         height: 120px !important;
         min-height: 120px !important;
+        width: 68px !important;
+        min-width: 68px !important;
     }
     #paycard-text {
         font-size: 15px !important;

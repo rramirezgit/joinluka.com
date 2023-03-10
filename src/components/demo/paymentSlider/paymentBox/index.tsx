@@ -4,7 +4,7 @@ import Image from "next/image";
 
 interface BoxProps {
   text: string;
-  img: string;
+  img: any;
   imgWidth?: number;
   imgHeight?: number;
   borderColor?: string;
@@ -42,13 +42,17 @@ const PaymentBox = ({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          position: 'relative',
+          backgroundImage: `url(${img.src})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'left'
         }}
       >
-        <Image
+        {/* <Image
           src={img}
           alt={text}
           style={{ maxHeight: "100%", maxWidth: "100%" }}
-        />
+        /> */}
       </Box>
       <Typography
         sx={{

@@ -8,7 +8,7 @@ interface Props {
   type: "card" | "other";
   text?: string;
   label?: string;
-  img?: string;
+  img?: any;
   width?: number;
   height?: number;
   shape?: string;
@@ -52,7 +52,7 @@ const PayCard = ({
               <Image
                 src={PaymentImgs.wifi}
                 alt="Wireless"
-                style={{ height: "100%", width: "100%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </Box>
             <Box className={styles["big-circle"]} id={"big-circle"}>
@@ -138,12 +138,17 @@ const PayCard = ({
             id={"paycard-shape"}
             sx={{
               borderRadius: "8px",
+              right: "0px",
             }}
           >
             <Image
               alt="Shape"
               src={shape}
-              style={{ maxHeight: "100%", borderRadius: "8px" }}
+              style={{
+                maxHeight: "100%",
+                maxWidth: "100%",
+                borderRadius: "8px",
+              }}
             />
           </Box>
           <Box
@@ -159,13 +164,13 @@ const PayCard = ({
               component={"figure"}
               className={styles.logo}
               id={"paycard-icon"}
-            >
-              <Image
-                src={img}
-                alt="Paypal"
-                style={{ maxHeight: "100%", maxWidth: "100%" }}
-              />
-            </Box>
+              sx={{
+                position: "relative",
+                backgroundImage: `url(${img.src})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "left",
+              }}
+            ></Box>
             <Box>
               <Typography
                 className={styles["paypal-title"]}
