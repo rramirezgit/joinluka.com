@@ -10,6 +10,7 @@ import "@/components/demo/demoHeader/index.css";
 import "@/components/demo/mobileContent/index.css";
 import "@/components/demo/mobileContent/PaymentSlider/payCard/index.css";
 import "@/components/templates/demoGateway/demoContent/index.css";
+import "@/components/templates/demoGateway/demoContent/desktopContent/index.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

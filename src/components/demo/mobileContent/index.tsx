@@ -9,7 +9,6 @@ import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
 import { currencyValues } from "@/logic";
 import PaymentSlider from "./PaymentSlider";
-
 import supportImg from "@/assets/demoLink";
 import Image from "next/image";
 import { colors } from "@/theme/variables";
@@ -86,7 +85,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
                     color: colors.demo_mobile_gray,
                     fontFamily: demo.font?.label
                       ? `${demo.font?.label} !important`
-                      : "Open Sans",
+                      : "Open SansVariable",
                   }}
                 >
                   {demo.language?.value === "EN" ? "My business" : "Mi negocio"}
@@ -98,7 +97,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
                     color: colors.demo_mobile_gray_l,
                     fontFamily: demo.font?.label
                       ? `${demo.font?.label} !important`
-                      : "Open Sans",
+                      : "Open SansVariable",
                   }}
                 >
                   {demo.language?.value === "EN" ? "Receipt 123" : "Recibo 123"}
@@ -113,7 +112,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
                 sx={{
                   fontFamily: demo.font?.label
                     ? `${demo.font?.label} !important`
-                    : "Open Sans",
+                    : "Open SansVariable",
                 }}
               >
                 {demo.language?.value === "EN"
@@ -130,7 +129,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
                 color: colors.demo_mobile_gray_d,
                 fontFamily: demo.font?.label
                   ? `${demo.font?.label} !important`
-                  : "Open Sans",
+                  : "Open SansVariable",
               }}
             >
               {`${demo.currency?.value ? demo.currency?.value : "$"}55,57 ${
@@ -148,7 +147,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
                 color: colors.primary_buttons,
                 fontFamily: demo.font?.label
                   ? `${demo.font?.label} !important`
-                  : "Open Sans",
+                  : "Open SansVariable",
               }}
             >
               {demo.language?.value === "EN"
@@ -185,7 +184,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
                 color: `${colors.white} !important`,
                 fontFamily: demo.font?.label
                   ? `${demo.font?.label} !important`
-                  : "Open Sans",
+                  : "Open SansVariable",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",

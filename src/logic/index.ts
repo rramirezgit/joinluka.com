@@ -60,7 +60,7 @@ export const languages = [
 export const fonts = [
   { label: "Arial", value: "234g785638547" },
   { label: "Courier New", value: "237dd8547" },
-  { label: "Open Sans", value: "2r565w54ar5" },
+  { label: "Open SansVariable", value: "2r565w54ar5" },
   { label: "Georgia", value: "234gh85e2c547" },
   { label: "Gill Sans", value: "234g4dfgxd8547" },
   { label: "Times New Roman", value: "234gtdd8547" },

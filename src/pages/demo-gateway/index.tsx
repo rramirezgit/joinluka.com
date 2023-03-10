@@ -7,6 +7,7 @@ import DemoHeader from "@/components/demo/demoHeader";
 import DemoMenuResponsive from "@/components/demo/demoMenu/demoMenuResponsive";
 import DescriptionGateway from "@/components/demo/demoMenu/description/descriptionGateway";
 import CustomizationGateway from "@/components/demo/demoMenu/customization/customizationGateway";
+import DemoContent from "@/components/templates/demoGateway/demoContent";
 
 const DemoGateway = (): JSX.Element => {
   const [demoMobile, setDemoMobile] = useState(false);
@@ -72,26 +73,20 @@ const DemoGateway = (): JSX.Element => {
             handleDesktop={handleDesktop}
           />
         </Box>
-        {/* <Box
-          sx={
-            {
-              height: {
-                xs: 'calc(100% - 210px)',
-                md: 'calc(100% - 105px)'
-              },
-              order: {
-                xs: 2,
-                md: 2
-              }
-            }
-          }
+        <Box
+          sx={{
+            height: {
+              xs: "calc(100% - 210px)",
+              md: "calc(100% - 105px)",
+            },
+            order: {
+              xs: 2,
+              md: 2,
+            },
+          }}
         >
-          <DemoContent
-            mobileState={demoMobile}
-            desktopState={demoDesktop}
-          />
-        </Box> 
-      */}
+          <DemoContent mobileState={demoMobile} desktopState={demoDesktop} />
+        </Box>
       </Box>
       {openModal && (
         <DemoMenuResponsive close={handleModal} mounted={openModal}>

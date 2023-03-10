@@ -30,8 +30,8 @@ const PaymentSlider = (): JSX.Element => {
     >
       {demo.currency?.value ? (
         mobilePaymentMethods
-          .find((method) => method.label === demo.currency?.label)
-          ?.methods.map((item, index) => (
+          .find((method: any) => method.label === demo.currency?.label)
+          ?.methods.map((item: any, index: any) => (
             <PayCard
               type={item.type}
               text={item.text}

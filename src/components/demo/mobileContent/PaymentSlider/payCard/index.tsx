@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import styles from "./paycard.module.css";
 import Typography from "@mui/material/Typography";
-
 import PaymentImgs from "@/assets/demoLink/card";
 import Image from "next/image";
 

@@ -1,13 +1,14 @@
-import { Box, Typography, Button } from '@mui/material'
-import { getCssVar } from 'theme'
-import styles from './custom.module.css'
-import { RootState } from 'redux/store'
-import { useSelector } from 'react-redux'
-import config from 'const'
-import PaymentSlider from 'components/demo/paymentSlider'
+import { Box, Typography, Button } from "@mui/material";
+import styles from "./custom.module.css";
+import { RootState } from "@/redux/store";
+import { useSelector } from "react-redux";
+import PaymentSlider from "@/components/demo/paymentSlider";
+import { colors } from "@/theme/variables";
+import demoImgs from "@/assets/demo";
+import Image from "next/image";
 
 const Custom = (): JSX.Element => {
-  const demo = useSelector((state: RootState) => state.demo)
+  const demo = useSelector((state: RootState) => state.demo);
   return (
     <Box>
       <Box>
@@ -16,58 +17,58 @@ const Custom = (): JSX.Element => {
           sx={{
             fontFamily: demo.font?.label
               ? `${demo.font?.label} !important`
-              : 'Open Sans'
+              : "Open SansVariable",
           }}
         >
-          {demo.language?.value === 'EN' ? 'Payments' : 'Pagos'}
+          {demo.language?.value === "EN" ? "Payments" : "Pagos"}
         </Typography>
       </Box>
       <Box
-        id={'demogateway-desktop-custom-container'}
+        id={"demogateway-desktop-custom-container"}
         className={styles.container}
       >
         <PaymentSlider />
         <Box
-          id={'demogateway-desktop-graybox-1'}
-          className={styles['gray-box']}
+          id={"demogateway-desktop-graybox-1"}
+          className={styles["gray-box"]}
         ></Box>
         <Box
-          id={'demogateway-desktop-graybox-2'}
-          className={styles['gray-box']}
+          id={"demogateway-desktop-graybox-2"}
+          className={styles["gray-box"]}
         ></Box>
         <Box
-          id={'demogateway-desktop-graybox-3'}
-          className={styles['gray-box']}
+          id={"demogateway-desktop-graybox-3"}
+          className={styles["gray-box"]}
         ></Box>
         <Button
           className={styles.button}
           sx={{
             backgroundColor: demo.button
               ? `#${demo.button} !important`
-              : getCssVar('--primary-buttons'),
-            color: `${getCssVar('--white')} !important`,
+              : colors.primary_buttons,
+            color: `${colors.white} !important`,
             borderRadius: `${
-              typeof demo.border === 'number' ? demo.border : 8
+              typeof demo.border === "number" ? demo.border : 8
             }px !important`,
             fontFamily: demo.font?.label
               ? `${demo.font?.label} !important`
-              : 'Open Sans',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
+              : "Open SansVariable",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          <img
-            src={`${config.UrlBaseImg}demo/lock.svg`}
-            style={{ marginRight: '10px', height: '15px' }}
-            alt='Lock'
+          <Image
+            src={demoImgs.lock}
+            style={{ marginRight: "10px", height: "15px" }}
+            alt="Lock"
           />
-          {demo.language?.value === 'EN' ? 'Pay' : 'Pagar'}{' '}
-          {demo.currency?.value ? demo.currency?.value : '$'} 55,57
+          {demo.language?.value === "EN" ? "Pay" : "Pagar"}{" "}
+          {demo.currency?.value ? demo.currency?.value : "$"} 55,57
         </Button>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Custom
+export default Custom;
