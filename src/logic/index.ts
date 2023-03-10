@@ -1,3 +1,4 @@
+import CardImgs from "@/assets/card";
 import Payments from "@/assets/payment/indext";
 
 type Coins =
@@ -13,6 +14,24 @@ type Coins =
 interface CurrencyInterface {
   label: Coins;
   value: string;
+}
+
+type CardType = "card" | "other";
+
+interface MobileMethodsInterface {
+  label: string;
+  text: string;
+  img: string;
+  width?: number;
+  height?: number;
+  shape?: string;
+  type: CardType;
+  check: boolean;
+}
+
+interface MobilePaymentInterface {
+  label: Coins;
+  methods: MobileMethodsInterface[];
 }
 
 interface MethodsInterface {
@@ -599,5 +618,241 @@ export const allCountries = [
     code: "VE",
     label: "Venezuela",
     phone: "58",
+  },
+];
+
+export const mobilePaymentMethods: MobilePaymentInterface[] = [
+  {
+    label: "Dollars",
+    methods: [
+      {
+        label: "Debit/Credit",
+        img: Payments.card,
+        width: 35,
+        height: 50,
+        type: "card",
+        check: true,
+        text: "**** 3507",
+      },
+      {
+        label: "Paypal",
+        img: Payments.paypal,
+        width: 20,
+        height: 50,
+        shape: CardImgs.paypalCard,
+        type: "other",
+        check: false,
+        text: "mail@gmail.com",
+      },
+      {
+        label: "Zelle",
+        img: Payments.zelle,
+        width: 35,
+        height: 50,
+        shape: CardImgs.zelleCard,
+        type: "other",
+        check: false,
+        text: "mail@gmail.com",
+      },
+      {
+        label: "USD Transfer",
+        img: Payments.transferUsd,
+        width: 23,
+        height: 50,
+        shape: CardImgs.transferCard,
+        type: "other",
+        check: false,
+        text: "**** **** 1234",
+      },
+    ],
+  },
+  {
+    label: "Chilean Peso",
+    methods: [
+      {
+        label: "Khipu",
+        img: Payments.khipu,
+        width: 40,
+        height: 50,
+        shape: CardImgs.zelleCard,
+        type: "other",
+        check: true,
+        text: "**** **** 1234",
+      },
+      {
+        label: "Transbank",
+        img: Payments.transbank,
+        width: 60,
+        height: 50,
+        shape: CardImgs.transbankCard,
+        type: "other",
+        check: false,
+        text: "**** 3507",
+      },
+    ],
+  },
+  {
+    label: "Euros",
+    methods: [
+      {
+        label: "Debit/Credit",
+        img: Payments.card,
+        width: 35,
+        height: 50,
+        type: "card",
+        check: true,
+        text: "**** 3507",
+      },
+      {
+        label: "Paypal",
+        img: Payments.paypal,
+        width: 20,
+        height: 50,
+        shape: CardImgs.paypalCard,
+        type: "other",
+        check: false,
+        text: "mail@gmail.com",
+      },
+      {
+        label: "EUR Transfer",
+        img: Payments.transferEu,
+        width: 23,
+        height: 50,
+        shape: CardImgs.transferCard,
+        type: "other",
+        check: false,
+        text: "**** **** 1234",
+      },
+    ],
+  },
+  {
+    label: "Japanese Yen",
+    methods: [
+      {
+        label: "Debit/Credit",
+        img: Payments.card,
+        width: 35,
+        height: 50,
+        type: "card",
+        check: true,
+        text: "**** 3507",
+      },
+      {
+        label: "Paypal",
+        img: Payments.paypal,
+        width: 20,
+        height: 50,
+        shape: CardImgs.paypalCard,
+        type: "other",
+        check: false,
+        text: "mail@gmail.com",
+      },
+    ],
+  },
+  {
+    label: "Pounds",
+    methods: [
+      {
+        label: "Debit/Credit",
+        img: Payments.card,
+        width: 35,
+        height: 50,
+        type: "card",
+        check: true,
+        text: "**** 3507",
+      },
+      {
+        label: "Paypal",
+        img: Payments.paypal,
+        width: 20,
+        height: 50,
+        shape: CardImgs.paypalCard,
+        type: "other",
+        check: false,
+        text: "mail@gmail.com",
+      },
+      {
+        label: "GBP Transfer",
+        img: Payments.transferEu,
+        width: 23,
+        height: 50,
+        shape: CardImgs.transferCard,
+        type: "other",
+        check: false,
+        text: "**** **** 1234",
+      },
+    ],
+  },
+  {
+    label: "Swiss Franc",
+    methods: [
+      {
+        label: "Debit/Credit",
+        img: Payments.card,
+        width: 35,
+        height: 50,
+        type: "card",
+        check: true,
+        text: "**** 3507",
+      },
+    ],
+  },
+  {
+    label: "Uruguayan Peso",
+    methods: [
+      {
+        label: "Debit/Credit",
+        img: Payments.card,
+        width: 35,
+        height: 50,
+        type: "card",
+        check: true,
+        text: "**** 3507",
+      },
+    ],
+  },
+  {
+    label: "Bolívares",
+    methods: [
+      {
+        label: "Débito/Crédito",
+        img: Payments.bnc,
+        width: 25,
+        height: 50,
+        type: "card",
+        check: true,
+        text: "**** 3507",
+      },
+      {
+        label: "C2P",
+        img: Payments.c2p,
+        width: 22,
+        height: 50,
+        shape: CardImgs.c2pCard,
+        type: "other",
+        check: false,
+        text: "555 5555",
+      },
+      {
+        label: "Banesco",
+        img: Payments.banesco,
+        width: 60,
+        height: 50,
+        shape: CardImgs.banescoCard,
+        type: "other",
+        check: false,
+        text: "**** **** 1234",
+      },
+      {
+        label: "Pago Móvil",
+        img: Payments.c2p,
+        width: 22,
+        height: 50,
+        shape: CardImgs.c2pCard,
+        type: "other",
+        check: false,
+        text: "555 5555",
+      },
+    ],
   },
 ];

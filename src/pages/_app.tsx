@@ -4,6 +4,12 @@ import type { AppProps } from "next/app";
 import "@fontsource/open-sans/variable.css";
 import { Provider } from "react-redux";
 import store from "@/redux/store";
+import "@/components/demo/demoContentLayout/index.css";
+import "@/components/demo/demoCustomHeader/index.css";
+import "@/components/demo/demoHeader/index.css";
+import "@/components/demo/mobileContent/index.css";
+import "@/components/demo/mobileContent/PaymentSlider/payCard/index.css";
+import "@/components/templates/demoGateway/demoContent/index.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
