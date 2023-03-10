@@ -18,7 +18,7 @@ interface Props {
 const PayCard = ({
   type,
   label,
-  img,
+  img="",
   shape = "",
   check,
   text,
@@ -159,7 +159,7 @@ const PayCard = ({
               className={styles.logo}
               id={"paycard-icon"}
             >
-              <img
+              <Image
                 src={img}
                 alt="Paypal"
                 style={{ maxHeight: "100%", maxWidth: "100%" }}

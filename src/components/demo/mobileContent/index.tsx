@@ -33,7 +33,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
           loading="lazy"
           src={type === "link" ? supportImg.phone : supportImg.phoneGateway}
           alt="Phone"
-          style={{ height: "100%" }}
+          style={{ height: "100%", width: '100%' }}
           onLoad={() => onLoad()}
         />
       </Box>
@@ -71,7 +71,7 @@ const MobileContent = ({ type, onLoad }: Props): JSX.Element => {
                 id={"mobilecontent-logo"}
                 className={styles.logo}
               >
-                <img
+                <Image
                   src={demo.imgUrl ? demo.imgUrl : placeholder}
                   alt="Logo"
                   style={{ maxWidth: "100%", maxHeight: "100%" }}
