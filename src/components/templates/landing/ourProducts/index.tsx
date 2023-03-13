@@ -6,7 +6,7 @@ import lukaCSS from "@/styles/luka.module.css";
 import { Box, Typography } from "@mui/material";
 import cardsArray from "./ourProductsArray";
 import Square from "@/components/square";
-import { v4 } from "uuid";
+import { randomUUID } from 'crypto'
 
 const OurProducts = (): JSX.Element => {
   const cardsInfo = cardsArray;
@@ -34,7 +34,7 @@ const OurProducts = (): JSX.Element => {
       >
         Our Products
       </Typography>
-      <Carousel buttonsMargin={60} height="410" width="300" id={v4()}>
+      <Carousel buttonsMargin={60} height="410" width="300" id={'22525-25648df2-dfsdf568s'}>
         {cardsInfo.map((card) => {
           return (
             <Card

@@ -3,7 +3,6 @@ import cardCSS from "./card.module.css";
 import Tags from "@/components/tags";
 import placeHolder from "@/assets/placeholder.svg";
 import Image from "next/image";
-import { v4 } from "uuid";
 
 interface Props {
   id: string;
@@ -59,9 +58,9 @@ const Card = ({ id, title, tags, text, imageUrl }: Props): JSX.Element => {
       <Typography className={cardCSS.title}>{title}</Typography>
       <Tags tags={tags} />
       <ul>
-        {text.map((t) => {
+        {text.map((t, index) => {
           return (
-            <li key={v4()} className={cardCSS["list-element"]}>
+            <li key={`${t}-${index}`} className={cardCSS["list-element"]}>
               <Typography className={cardCSS.text}>{t}</Typography>
             </li>
           );

@@ -22,7 +22,7 @@ const PhoneBox = (): JSX.Element => {
           justifyContent: "center",
         }}
       >
-        <Image src={vposPhone} alt={"Demo"} style={{ maxWidth: "100%" }} />
+        <Image src={vposPhone} alt={"Demo"} style={{ maxWidth: "100%", height: '100%' }} />
       </Box>
       <Box
         component={"figure"}
@@ -33,7 +33,7 @@ const PhoneBox = (): JSX.Element => {
           width: "15%",
         }}
       >
-        <Image src={wifi} alt={"Demo"} style={{ maxWidth: "100%" }} />
+        <Image src={wifi} alt={"Demo"} style={{ maxWidth: "100%", height: '100%' }} />
       </Box>
     </Box>
   );

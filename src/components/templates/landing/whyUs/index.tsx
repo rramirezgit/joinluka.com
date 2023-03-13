@@ -7,7 +7,6 @@ import Card from "./card";
 import Square from "@/components/square";
 import cardsInfo from "./whyUsArray";
 import { colors } from "@/theme/variables";
-import { v4 } from "uuid";
 
 const WhyUs = (): JSX.Element => {
   const theme = useTheme();
@@ -74,7 +73,7 @@ const WhyUs = (): JSX.Element => {
         <Carousel
           width="300"
           height={useMediaQuery(theme.breakpoints.down("lg")) ? "593" : "605"}
-          id={v4()}
+          id={'87sdfgsf-654f87gs-sdfg657sdf'}
         >
           {cardsInfo.map((card) => {
             return (

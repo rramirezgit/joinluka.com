@@ -27,7 +27,9 @@ const FormLayout = ({
   const router = useRouter();
   return (
     <Box className={styles.container}>
-      <Typography className={styles.title}>{title}</Typography>
+      <Typography className={styles.title}
+        sx={{ fontSize: { xs: '18px !important', sm: '20px !important' } }}
+      >{title}</Typography>
       {!loading && !success && !failure && children}
       {loading && !success && !failure && (
         <Box

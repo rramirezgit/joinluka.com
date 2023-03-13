@@ -55,7 +55,7 @@ const FormView = ({ children, image }: Props): JSX.Element => {
           position: "relative",
         }}
       >
-        <Image className={styles.image} src={image} alt="support" />
+        <Image className={styles.image} src={image} alt="support" style={{ maxWidth: "100%", height: '100%' }} />
       </Box>
       <Box
         className={styles["form-container"]}

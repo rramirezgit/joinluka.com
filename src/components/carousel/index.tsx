@@ -111,14 +111,15 @@ const Carousel = ({
             alt={"Back"}
           />
         </Box>
-        {children.map((child) => {
+        {children.map((child, index) => {
           return (
             <Box
               key={child.key}
               id={`selector-${child.key ?? ""}`}
               className={clsx(
                 carouselCSS["carousel-selector"],
-                lukaCSS.pointer
+                lukaCSS.pointer,
+                index === 0 && carouselCSS["carousel-selector--active"]
               )}
             ></Box>
           );

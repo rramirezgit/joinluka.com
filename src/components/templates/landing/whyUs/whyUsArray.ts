@@ -1,7 +1,6 @@
 import img1 from "@/assets/whyus/whyus-1.svg";
 import img2 from "@/assets/whyus/whyus-2.svg";
 import img3 from "@/assets/whyus/whyus-3.svg";
-import { v4 } from "uuid";
 
 interface CardInterface {
   key: string;
@@ -13,7 +12,7 @@ interface CardInterface {
 
 const cardsInfo: CardInterface[] = [
   {
-    key: v4(),
+    key: 'asdfasd5-6546ad-54654s',
     title: "Embedded solution",
     tags: ["GATEWAY"],
     text: [
@@ -22,14 +21,14 @@ const cardsInfo: CardInterface[] = [
     imageUrl: img1,
   },
   {
-    key: v4(),
+    key: 'asdfsd85465-adsf657-54685asdfasd',
     title: "Plug and play solution",
     tags: ["PAYMENT LINK", "VPOS"],
     text: ["Hassle free payment management web interface"],
     imageUrl: img2,
   },
   {
-    key: v4(),
+    key: 'asdf874654asd-df54685-54354asd5',
     title: "Hardwareless onsite payments",
     tags: ["VPOS"],
     text: [
