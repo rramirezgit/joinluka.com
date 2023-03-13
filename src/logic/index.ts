@@ -119,7 +119,7 @@ export const paymentMethods: PaymentInterface[] = [
       {
         label: "Transbank",
         img: Payments.transbank,
-        width: 20,
+        width: 50,
         height: 50,
       },
     ],
@@ -221,7 +221,7 @@ export const paymentMethods: PaymentInterface[] = [
       {
         label: "Debit",
         img: Payments.mercantil,
-        width: 20,
+        width: 60,
         height: 50,
       },
       {
@@ -239,7 +239,7 @@ export const paymentMethods: PaymentInterface[] = [
       {
         label: "Banesco",
         img: Payments.banesco,
-        width: 60,
+        width: 22,
         height: 50,
       },
     ],

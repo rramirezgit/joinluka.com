@@ -35,9 +35,9 @@ const DemoContentLayout = ({ children, support }: LayoutProps): JSX.Element => {
           },
           alignItems: "center",
           justifyContent: "center",
-          right: "40px",
+          left: "40px",
           bottom: {
-            xs: "-85px",
+            xs: "-90px",
             md: "15px",
           },
         }}
