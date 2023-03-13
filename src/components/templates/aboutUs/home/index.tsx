@@ -3,20 +3,25 @@ import Nav from "@/components/nav";
 import { Box } from "@mui/material";
 import style from "./homeAboutUs.module.css";
 import Typography from "@mui/material/Typography";
-import Image from "next/image";
-import image from "@/assets/aboutUs/home/Group.svg";
+import animation from "@/assets/AboutUs_animacion.json";
+import Lottie from "lottie-react";
 
 const ImgHome = (): JSX.Element => {
   return (
     <Box className={style.contentImg}>
-      <Box
-        component={Image}
-        src={image}
-        alt="About us"
-        className={style.img}
-        sx={{
+      <Lottie
+        animationData={animation}
+        loop={true}
+        autoplay={true}
+        style={{
           position: "relative",
           zIndex: 1,
+          width: "754px",
+          minWidth: "541.34px",
+          minHeight: "407px",
+          height: "100%",
+          top: "-49px",
+          left: "4px",
         }}
       />
     </Box>

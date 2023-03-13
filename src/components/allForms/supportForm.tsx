@@ -109,13 +109,11 @@ const SupportForm = ({
           onSubmit={async (values, actions) => {
             setLoading(true);
             await axios
-              .post(
-                "https://bspaycoapi-qa.payco.net.ve/api/v1/email",
-                {
-                  From: "noreply@lukapay.io",
-                  To: "support@lukapay.io",
-                  Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
-                  Body: `
+              .post("api/sendEmail", {
+                From: "noreply@lukapay.io",
+                To: /* "support@lukapay.io" */ "amena@lukapay.io",
+                Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
+                Body: `
                         El cliente ${values.name} ${values.lastName} ha enviado un mensaje de soporte con el siguiente contenido:<br/><br/>
                         País: ${values.country.label},<br/>
                         Correo: ${values.email},<br/>
@@ -123,14 +121,7 @@ const SupportForm = ({
                         Tipo: ${values.subject},<br/>
                         Mensaje: ${values.message}
                       `,
-                },
-                {
-                  auth: {
-                    username: "admin",
-                    password: "12345678",
-                  },
-                }
-              )
+              })
               .then(() => {
                 setLoading(false);
                 setSuccess(true);

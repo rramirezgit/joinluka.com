@@ -31,12 +31,12 @@ const drawerWidth = 240;
 
 const options = [
   {
-    id: "/support",
-    name: "Support",
-  },
-  {
     id: "/about-us",
     name: "About us",
+  },
+  {
+    id: "/support",
+    name: "Support",
   },
   {
     id: "/sales",

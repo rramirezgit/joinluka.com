@@ -114,16 +114,14 @@ const SalesForm = ({
           onSubmit={async (values, actions) => {
             setLoading(true);
             await axios
-              .post(
-                "https://bspaycoapi-qa.payco.net.ve/api/v1/email",
-                {
-                  From: "noreply@lukapay.io",
-                  To: /* "sales@lukapay.io" */ "amena@lukapay.io",
-                  Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
-                  Body: `
+              .post("api/sendEmail", {
+                From: "noreply@lukapay.io",
+                To: /* "sales@lukapay.io" */ "amena@lukapay.io",
+                Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
+                Body: `
                       El cliente ${values.name} ${
-                    values.lastName
-                  } ha enviado un mensaje a ventas con el siguiente contenido:<br/><br/>
+                  values.lastName
+                } ha enviado un mensaje a ventas con el siguiente contenido:<br/><br/>
                       País: ${values.country.label},<br/>
                       Correo: ${values.email},<br/>
                       Teléfono: ${values.country.phone}${values.phone},<br/>
@@ -133,14 +131,7 @@ const SalesForm = ({
                       Expectativa (# de transacciones): ${values.income},<br/>
                       Mensaje: ${values.message}
                     `,
-                },
-                {
-                  auth: {
-                    username: "admin",
-                    password: "12345678",
-                  },
-                }
-              )
+              })
               .then(() => {
                 setLoading(false);
                 setSuccess(true);
