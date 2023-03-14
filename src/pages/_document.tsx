@@ -3,11 +3,14 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+        <link rel="manifest" href="/manifest.json" />
+        <title>Luka: Pay digitally simple</title>
+      </Head>
       <body>
         <Main />
         <NextScript />
