@@ -10,6 +10,7 @@ export const colors = {
   bg_gray: "#f6f7fb",
   black: "#000000",
   box_gray: "#CED4DA",
+  box_gray_o: "#ced4da5b",
   dark_blue: "#000853",
   dark_gray_text: "#2f363e",
   demo_mobile_gray: "#37414E",
