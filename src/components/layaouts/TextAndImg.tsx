@@ -1,28 +1,28 @@
-import { Box } from '@mui/material'
-import style from './TextAndImg.module.css'
+import { Box } from "@mui/material";
+import style from "./TextAndImg.module.css";
 
 interface TextAndImgProps {
-  children: JSX.Element[]
-  className?: string
-  sxOne?: any
-  sxTwo?: any
-  flDirectionSx?: string
-  heightSx: any
+  children: JSX.Element[];
+  className?: string;
+  sxOne?: any;
+  sxTwo?: any;
+  flDirectionSx?: string;
+  heightSx: any;
 }
 
 const TextAndImg = ({
   children,
-  className = '',
+  className = "",
   sxOne = {},
   sxTwo = {},
   heightSx,
-  flDirectionSx = 'column'
+  flDirectionSx = "column",
 }: TextAndImgProps): JSX.Element => {
   return (
     <Box
       className={`${style.content} ${className}`}
       sx={{
-        height: heightSx
+        height: heightSx,
       }}
     >
       <Box
@@ -30,9 +30,9 @@ const TextAndImg = ({
         sx={{
           flexDirection: {
             xs: flDirectionSx,
-            lg: 'row'
+            lg: "row",
           },
-          width: '100%'
+          width: "100%",
         }}
       >
         <Box sx={sxOne}>{children[0]}</Box>
@@ -40,7 +40,7 @@ const TextAndImg = ({
         {children[2] && children[2]}
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default TextAndImg
+export default TextAndImg;
