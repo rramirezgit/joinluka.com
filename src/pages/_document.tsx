@@ -15,10 +15,10 @@ export default function Document() {
         <Main />
         <NextScript />
         <div id="modal"></div>
-        {/* <script
+        <script
           id="ze-snippet"
           src="https://static.zdassets.com/ekr/snippet.js?key=7ac1d2a1-71dc-4700-87c8-15855cd8663e"
-        ></script> */}
+        ></script>
       </body>
     </Html>
   );
