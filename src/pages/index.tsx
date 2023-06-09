@@ -15,9 +15,9 @@ const Landing = (): JSX.Element => {
     <div className={style.landing}>
       <Home />
       <OurProducts />
-      <Gateway />
-      <PaymentLink />
       <VPOS />
+      <PaymentLink />
+      <Gateway />
       <WhyUs />
       <World />
       <Box sx={{ padding: "310px 35px 50px 35px" }}>

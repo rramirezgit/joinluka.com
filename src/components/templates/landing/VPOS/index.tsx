@@ -161,7 +161,7 @@ const VPOS = (): JSX.Element => {
         top={"0"}
         right={"0"}
         maxHeight={140}
-        maxWidth={130}
+        maxWidth={120}
       />
     </Box>
   );
