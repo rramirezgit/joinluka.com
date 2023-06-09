@@ -5,11 +5,11 @@ import image3 from "@/assets/ourProducts/image-3.svg";
 
 const cardsArray: CardInterface[] = [
   {
-    id: "gateway-box-id",
-    idCard: "gateway-card-id",
-    title: "Multi Currency Gateway",
-    text: "B2B Payment gateway embedded solution. Manages multi currency and multi payment methods with an online conciliation dashboard.",
-    imageUrl: image1,
+    id: "vpos-box-id",
+    idCard: "vpos-card-id",
+    title: "Virtual Point of Sale",
+    text: "Hardware-free point of sales that enables QR payments and contactless transactions. Scalable multi-device integration.",
+    imageUrl: image3,
   },
   {
     id: "Paylink-box-id",
@@ -19,12 +19,12 @@ const cardsArray: CardInterface[] = [
     imageUrl: image2,
   },
   {
-    id: "vpos-box-id",
-    idCard: "vpos-card-id",
-    title: "Virtual Point of Sale",
-    text: "Hardware-free point of sales that enables QR payments and contactless transactions. Scalable multi-device integration.",
-    imageUrl: image3,
-  },
+    id: "gateway-box-id",
+    idCard: "gateway-card-id",
+    title: "Multi Currency Gateway",
+    text: "B2B Payment gateway embedded solution. Manages multi currency and multi payment methods with an online conciliation dashboard.",
+    imageUrl: image1,
+  }
 ];
 
 export default cardsArray;
