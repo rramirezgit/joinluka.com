@@ -116,7 +116,7 @@ const SalesForm = ({
             await axios
               .post("api/sendEmail", {
                 From: "noreply@lukapay.io",
-                To: /* "sales@lukapay.io" */ "amena@lukapay.io",
+                To: "sales@lukapay.io" ,
                 Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
                 Body: `
                       El cliente ${values.name} ${

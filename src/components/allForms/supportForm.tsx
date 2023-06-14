@@ -111,7 +111,7 @@ const SupportForm = ({
             await axios
               .post("api/sendEmail", {
                 From: "noreply@lukapay.io",
-                To: /* "support@lukapay.io" */ "amena@lukapay.io",
+                To: "support@lukapay.io",
                 Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
                 Body: `
                         El cliente ${values.name} ${values.lastName} ha enviado un mensaje de soporte con el siguiente contenido:<br/><br/>
