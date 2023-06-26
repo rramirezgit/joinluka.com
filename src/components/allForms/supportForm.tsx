@@ -127,13 +127,13 @@ const SupportForm = ({
                 setSuccess(true);
                 actions.resetForm();
               })
-              .catch((error) => {
+              .catch(error => {
                 setFailure(true);
                 console.log(error);
               });
           }}
         >
-          {(formik) => (
+          {formik => (
             <form onSubmit={formik.handleSubmit}>
               <Box className={styles["input-container"]}>
                 <Autocomplete
@@ -144,7 +144,7 @@ const SupportForm = ({
                     formik.setFieldValue("subject", newValue)
                   }
                   options={subjects}
-                  renderInput={(params) => (
+                  renderInput={params => (
                     <TextField
                       {...params}
                       name={"subject"}
@@ -238,7 +238,7 @@ const SupportForm = ({
                         formik.setFieldValue("country", newValue)
                       }
                       options={allCountries}
-                      getOptionLabel={(option) => `+ ${option.phone}`}
+                      getOptionLabel={option => `+ ${option.phone}`}
                       renderOption={(props, option) => (
                         <Box
                           component="li"
@@ -265,7 +265,7 @@ const SupportForm = ({
                           </Typography>
                         </Box>
                       )}
-                      renderInput={(params) => (
+                      renderInput={params => (
                         <TextField
                           {...params}
                           name={""}
@@ -323,7 +323,7 @@ const SupportForm = ({
                       name={"phone"}
                       variant="standard"
                       value={formik.values.phone}
-                      onChange={(e) => {
+                      onChange={e => {
                         if (/^[0-9]*$/.test(e.target.value)) {
                           if (e.target.value.length <= 11) {
                             formik.handleChange(e);

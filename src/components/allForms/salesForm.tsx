@@ -116,7 +116,7 @@ const SalesForm = ({
             await axios
               .post("api/sendEmail", {
                 From: "noreply@lukapay.io",
-                To: "sales@lukapay.io" ,
+                To: "sales@lukapay.io",
                 Subject: `Contacto Landing - Cliente: ${values.name} ${values.lastName}`,
                 Body: `
                       El cliente ${values.name} ${
@@ -137,13 +137,13 @@ const SalesForm = ({
                 setSuccess(true);
                 actions.resetForm();
               })
-              .catch((error) => {
+              .catch(error => {
                 setFailure(true);
                 console.log(error);
               });
           }}
         >
-          {(formik) => (
+          {formik => (
             <form onSubmit={formik.handleSubmit}>
               <Box className={styles["input-container"]}>
                 <TextField
@@ -222,7 +222,7 @@ const SalesForm = ({
                     formik.setFieldValue("income", newValue)
                   }
                   options={transactions}
-                  renderInput={(params) => (
+                  renderInput={params => (
                     <TextField
                       {...params}
                       name={"income"}
@@ -266,7 +266,7 @@ const SalesForm = ({
                         formik.setFieldValue("country", newValue)
                       }
                       options={allCountries}
-                      getOptionLabel={(option) => `+ ${option.phone}`}
+                      getOptionLabel={option => `+ ${option.phone}`}
                       renderOption={(props, option) => (
                         <Box
                           component="li"
@@ -293,7 +293,7 @@ const SalesForm = ({
                           </Typography>
                         </Box>
                       )}
-                      renderInput={(params) => (
+                      renderInput={params => (
                         <TextField
                           {...params}
                           name={""}
@@ -351,7 +351,7 @@ const SalesForm = ({
                       name={"phone"}
                       variant="standard"
                       value={formik.values.phone}
-                      onChange={(e) => {
+                      onChange={e => {
                         if (/^[0-9]*$/.test(e.target.value)) {
                           formik.handleChange(e);
                         }

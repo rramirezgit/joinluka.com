@@ -10,17 +10,24 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  await axios
-    .post("https://bspaycoapi-qa.payco.net.ve/api/v1/email", req.body, {
-      auth: {
-        username: "admin",
-        password: "12345678",
-      },
-    })
-    .then(() => {
-      res.status(200).json({ name: "enviado" });
-    })
-    .catch((error) => {
-      res.status(500).json({ name: error });
-    });
+  const url = process.env.NEXT_PUBLIC_API_URL;
+  const user = process.env.NEXT_PUBLIC_API_USER;
+  const pass = process.env.NEXT_PUBLIC_API_PASS;
+  if (url && user && pass) {
+    await axios
+      .post(url, req.body, {
+        auth: {
+          username: user,
+          password: pass,
+        },
+      })
+      .then(() => {
+        res.status(200).json({ name: "enviado" });
+      })
+      .catch(error => {
+        res.status(500).json({ name: error });
+      });
+  } else {
+    res.status(500).json({ name: "error" });
+  }
 }
