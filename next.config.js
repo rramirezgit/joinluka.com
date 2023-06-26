@@ -4,12 +4,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'cdn.filestackcontent.com',
-        port: '',
+        protocol: "https",
+        hostname: "cdn.filestackcontent.com",
+        port: "",
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
