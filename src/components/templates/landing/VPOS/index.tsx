@@ -6,6 +6,7 @@ import PhoneBox from "./PhoneBox";
 import Square from "@/components/square";
 import ScrollBoxes from "./ScrollBoxes";
 import cardsArray from "../ourProducts/ourProductsArray";
+import MobileButtons from "@/components/mobileButtons";
 
 const VPOS = (): JSX.Element => {
   return (
@@ -132,9 +133,10 @@ const VPOS = (): JSX.Element => {
               }
             />
           </List>
-          <Tags
+          <MobileButtons />
+          {/* <Tags
             tags={["INTEGRATION VIA API", "GLOBAL REACH", "MULTIPLE USE CASES"]}
-          />
+          /> */}
         </Box>
         <Box
           sx={{
