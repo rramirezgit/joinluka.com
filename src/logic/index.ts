@@ -74,7 +74,7 @@ export const currency: CurrencyInterface[] = [
   { label: "Pounds", value: "£" },
   { label: "Swiss Franc", value: "₣" },
   { label: "Uruguayan Peso", value: "$U" },
-  { label: "Bolívares", value: "Bs." },
+  // { label: "Bolívares", value: "Bs." },
 ];
 
 export const paymentMethods: PaymentInterface[] = [
@@ -254,7 +254,7 @@ export const currencyValues = [
   { label: "Pounds", value: "GBP" },
   { label: "Swiss Franc", value: "Fr" },
   { label: "Uruguayan Peso", value: "UYU" },
-  { label: "Bolívares", value: "VES" },
+  // { label: "Bolívares", value: "VES" },
 ];
 
 export const subjects = [
@@ -300,7 +300,7 @@ export const countries: Countries[] = [
   { name: "Swiss Franc", currency: "CHF", code: "CH" },
   { name: "United State Dollar", currency: "USD", code: "US" },
   { name: "Uruguayan Peso", currency: "UYU", code: "UY" },
-  { name: "Venezuelan Bolivar Soberano", currency: "VES", code: "VE" },
+  // { name: "Venezuelan Bolivar Soberano", currency: "VES", code: "VE" },
 ];
 
 export const allCountries = [
