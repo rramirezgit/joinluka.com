@@ -44,7 +44,7 @@ const PhoneBox = (): JSX.Element => {
           }}
         />
         <Box component={"figure"} className={styles["phone-wifi"]}>
-          <Image src={wifi} alt={"Demo"} style={{ maxWidth: "100%" }} />
+          <Image src={wifi} alt={"Demo"} style={{ maxWidth: "100%", maxHeight: '100%' }} />
         </Box>
       </Box>
     </Box>
