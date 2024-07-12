@@ -56,7 +56,6 @@ const Card = ({ id, title, tags, text, imageUrl }: Props): JSX.Element => {
         />
       </Box>
       <Typography className={cardCSS.title}>{title}</Typography>
-      <Tags tags={tags} />
       <ul>
         {text.map((t, index) => {
           return (
@@ -66,6 +65,7 @@ const Card = ({ id, title, tags, text, imageUrl }: Props): JSX.Element => {
           );
         })}
       </ul>
+      <Tags margin='0px' tags={tags} />
     </Box>
   );
 };

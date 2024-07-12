@@ -12,14 +12,14 @@ const World = (): JSX.Element => {
         position={"relative"}
         className={style.content}
         sx={{
-          height: {
-            xs: "1102px",
-            md: "1298px",
-            lg: "1537px",
-          },
+          // height: {
+          //   xs: "1102px",
+          //   md: "1298px",
+          //   lg: "1537px",
+          // },
           padding: {
             xs: "0 0 0 0",
-            md: "129px 0 0 0",
+            md: '40px 0 0 0'
           },
           gap: {
             xs: "20px",
@@ -27,7 +27,7 @@ const World = (): JSX.Element => {
           },
         }}
       >
-        <Box
+        {/* <Box
           className={style.info}
           sx={{
             marginTop: {
@@ -99,7 +99,7 @@ const World = (): JSX.Element => {
           }}
         >
           <Lottie animationData={animation} loop={true} />
-        </Box>
+        </Box> */}
         <Box className={style.contentReady}>
           <Ready />
         </Box>

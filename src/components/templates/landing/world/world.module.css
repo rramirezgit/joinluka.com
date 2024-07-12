@@ -1,6 +1,6 @@
 .content {
-  background: url(../../../../assets/world/texturaMalla.png) no-repeat
-    var(--dark_blue);
+  /* background: url(../../../../assets/world/texturaMalla.png) no-repeat
+    var(--dark_blue); */
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -62,8 +62,6 @@
 .contentReady {
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: -228px;
   width: 100%;
   padding: 44px;
 }

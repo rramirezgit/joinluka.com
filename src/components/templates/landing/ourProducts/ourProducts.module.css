@@ -9,5 +9,10 @@
 .title {
   color: var(--dark_gray_text) !important;
   font-weight: bold !important;
-  margin-bottom: 60px !important;
+  margin-bottom: 30px !important;
+}
+
+.subtitle {
+  color: var(--gray_text_dark) !important;
+  font-weight: 600 !important;
 }

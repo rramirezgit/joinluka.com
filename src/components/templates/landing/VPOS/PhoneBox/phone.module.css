@@ -1,0 +1,21 @@
+.phone-wifi {
+  position: absolute !important;
+  right: -75px !important;
+  top: -75px !important;
+  width: fit-content !important;
+}
+
+@media (max-width: 1200px) {
+  .phone {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 730px) {
+  .phone-wifi {
+    right: -12% !important;
+    top: -12% !important;
+    width: 15% !important;
+    height: 15% !important;
+  }
+}

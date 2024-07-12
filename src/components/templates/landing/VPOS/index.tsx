@@ -34,7 +34,7 @@ const VPOS = (): JSX.Element => {
             lg: "space-between !important",
           },
           maxWidth: "1370px",
-          padding: "0 35px",
+          padding: '0 60px'
         }}
       >
         <Box
@@ -70,7 +70,7 @@ const VPOS = (): JSX.Element => {
               className={vposStyles["title-blue"]}
               sx={{
                 fontSize: {
-                  xs: "45px",
+                  xs: "32px",
                 },
               }}
             >
@@ -80,7 +80,7 @@ const VPOS = (): JSX.Element => {
               className={vposStyles.title}
               sx={{
                 fontSize: {
-                  xs: "45px",
+                  xs: "32px",
                 },
               }}
             >
@@ -109,27 +109,17 @@ const VPOS = (): JSX.Element => {
           >
             <CustomListItem
               text={
-                "Receive and send payments, conveniently simple to everyone!"
+                "The solutions Luka offers to our current clients may support many businesses in need to simplify digital payments management, regardless of location."
               }
             />
             <CustomListItem
               text={
-                "Request and execute payments enabling local & international payments methods"
+                "Fit for an international purpose. We are already transacting in multiple currencies and enabled international payment methods."
               }
             />
             <CustomListItem
               text={
-                "Use the messaging channel best for your business: SMS, WhatsApp, Telegram, email, social media or your app."
-              }
-            />
-            <CustomListItem
-              text={
-                "Make easy and friendly the way payments are experienced by your business users."
-              }
-            />
-            <CustomListItem
-              text={
-                "Benefit from an easy to use web control panel to manage your payment links."
+                "Our team has a solid track record implementing and executing payment solutions in an intercontinental landscape."
               }
             />
           </List>

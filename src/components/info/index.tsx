@@ -51,8 +51,9 @@ const Info = ({
           }}
           sx={{
             fontSize: {
-              xs: "45px",
+              xs: "32px",
             },
+            marginBottom: '-8px !important'
           }}
         >
           {title}
@@ -63,7 +64,7 @@ const Info = ({
           }}
           sx={{
             fontSize: {
-              xs: "45px",
+              xs: "32px",
             },
           }}
         >
@@ -82,7 +83,7 @@ const Info = ({
 
       <List
         sx={{
-          marginTop: "35px",
+          marginTop: "25px",
         }}
       >
         {textList.map((text, index) => (

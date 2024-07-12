@@ -15,10 +15,10 @@ const MobileButtons = () => {
         className={styles['mobile-buttons-figure']}
       >
         <Image
-          src={googlePlay}
-          alt="Google Play"
+          src={appStore}
+          alt="App Store"
           style={{ width: "100%", height: "100%" }}
-          onClick={() => window.open('https://play.google.com/store/apps/details?id=com.luka.vpos&pli=1', '_blank')}
+          onClick={() => window.open('https://apps.apple.com/us/app/luka-vpos/id6449679850', '_blank')}
         />
       </Box>
       <Box
@@ -26,10 +26,10 @@ const MobileButtons = () => {
         className={styles['mobile-buttons-figure']}
       >
         <Image
-          src={appStore}
-          alt="App Store"
+          src={googlePlay}
+          alt="Google Play"
           style={{ width: "100%", height: "100%" }}
-          onClick={() => window.open('https://apps.apple.com/us/app/luka-vpos/id6449679850', '_blank')}
+          onClick={() => window.open('https://play.google.com/store/apps/details?id=com.luka.vpos&pli=1', '_blank')}
         />
       </Box>
     </Box>

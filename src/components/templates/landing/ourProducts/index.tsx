@@ -6,7 +6,7 @@ import lukaCSS from "@/styles/luka.module.css";
 import { Box, Typography } from "@mui/material";
 import cardsArray from "./ourProductsArray";
 import Square from "@/components/square";
-import { randomUUID } from 'crypto'
+import { randomUUID } from "crypto";
 
 const OurProducts = (): JSX.Element => {
   const cardsInfo = cardsArray;
@@ -18,23 +18,76 @@ const OurProducts = (): JSX.Element => {
       )}
       sx={{
         padding: {
-          xs: "70px 0",
-          md: "100px 0",
+          xs: "50px 0",
+          md: "60px 0",
         },
         position: "relative",
       }}
     >
-      <Typography
-        className={ourProductsCSS.title}
+      <Box
         sx={{
-          fontSize: {
-            xs: "45px !important",
-          },
+          width: "100%",
+          display: "flex",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          margin: "0 auto",
+          marginBottom: "60px",
+          maxWidth: "1335px",
+          padding: "0 35px",
+          flexDirection: "column",
         }}
       >
-        Our Products
-      </Typography>
-      <Carousel buttonsMargin={60} height="410" width="300" id={'22525-25648df2-dfsdf568s'}>
+        <Typography
+          className={ourProductsCSS.title}
+          sx={{
+            fontSize: {
+              xs: "32px !important",
+            },
+          }}
+        >
+          How it works
+        </Typography>
+        <Typography
+          className={ourProductsCSS.subtitle}
+          sx={{
+            marginBottom: "0px",
+            fontSize: {
+              xs: "16px !important",
+            },
+          }}
+        >
+          We offer a product suite that can satisfy you business needs.
+        </Typography>
+        <Typography
+          className={ourProductsCSS.subtitle}
+          sx={{
+            marginBottom: "0px",
+            fontSize: {
+              xs: "16px !important",
+            },
+          }}
+        >
+          A Multi-Payment method Gateway to improve your WEB site. A SDK for
+          your mobile apps. APIs for your ERP or Management software. And a
+          Virtual Point of Sale for all your brick and mortar transactions.
+        </Typography>
+        <Typography
+          className={ourProductsCSS.subtitle}
+          sx={{
+            fontSize: {
+              xs: "16px !important",
+            },
+          }}
+        >
+          All together in one single platform
+        </Typography>
+      </Box>
+      <Carousel
+        buttonsMargin={60}
+        height="410"
+        width="300"
+        id={"22525-25648df2-dfsdf568s"}
+      >
         {cardsInfo.map((card) => {
           return (
             <Card

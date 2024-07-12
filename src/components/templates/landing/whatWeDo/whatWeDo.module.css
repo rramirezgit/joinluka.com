@@ -1,0 +1,19 @@
+.whatwedo-container {
+  background-color: var(--bg_gray);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 200px 35px 0px 35px;
+}
+
+.title {
+  font-weight: 600 !important;
+  color: var(--white) !important;
+  margin-bottom: 20px !important;
+}
+
+.subtitle {
+  font-weight: 300 !important;
+  color: var(--white) !important;
+}

@@ -16,8 +16,8 @@ const WhyUs = (): JSX.Element => {
       sx={{
         position: "relative",
         padding: {
-          xs: "70px 50px",
-          md: "100px 100px",
+          xs: "50px 50px",
+          carousel: "50px 100px 0px 100px",
         },
       }}
     >
@@ -26,7 +26,7 @@ const WhyUs = (): JSX.Element => {
           className={whyUsCSS.title}
           sx={{
             fontSize: {
-              xs: "45px !important",
+              xs: "32px !important",
             },
             textAlign: "center",
           }}
@@ -41,12 +41,12 @@ const WhyUs = (): JSX.Element => {
               md: "24px !important",
             },
             textAlign: "center",
-            maxWidth: "1100px",
+            maxWidth: "850px",
             margin: "0 auto",
           }}
         >
-          We make sure we understand each other. We focus to ease your payments
-          capability so you concentrate on growing your business
+          We got the experience and expertise to ease your payments capability
+          so you can focus on growing your business
         </Typography>
       </Box>
       <Box
@@ -73,7 +73,7 @@ const WhyUs = (): JSX.Element => {
         <Carousel
           width="300"
           height={useMediaQuery(theme.breakpoints.down("lg")) ? "593" : "605"}
-          id={'87sdfgsf-654f87gs-sdfg657sdf'}
+          id={"87sdfgsf-654f87gs-sdfg657sdf"}
         >
           {cardsInfo.map((card) => {
             return (

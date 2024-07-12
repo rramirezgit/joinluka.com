@@ -35,6 +35,7 @@ declare module "@mui/material/styles" {
     xl: true;
     xxl: true;
     carousel: true;
+    sd: true;
   }
 }
 
@@ -307,6 +308,7 @@ const ThemeLuka = ({ children }: ThemeProps): JSX.Element => {
       values: {
         xs: 0,
         sm: 600,
+        sd: 750,
         md: 900,
         lg: 1200,
         xl: 1536,

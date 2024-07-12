@@ -166,6 +166,87 @@ const ScrollBoxes = (): JSX.Element => {
             },
           }}
         >
+        <Box
+          className={scrollStyles["big-box"]}
+          sx={{
+            width: {
+              xs: "450px",
+              lg: "600px",
+            },
+            height: {
+              xs: "220px",
+              lg: "290px",
+            },
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+              width: {
+                xs: "220px",
+                lg: "290px",
+              },
+              height: {
+                xs: "220px",
+                lg: "290px",
+              },
+            }}
+          >
+            <Box
+              component={"figure"}
+              sx={{
+                height: "40%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: "10px",
+              }}
+            >
+              <Image
+                src={imgVpos}
+                alt="Demo"
+                style={{ maxHeight: "100%", maxWidth: "100%" }}
+              />
+            </Box>
+            <Typography
+              className={scrollStyles["box-text"]}
+              sx={{
+                textAlign: "center",
+                fontSize: {
+                  xs: "14px",
+                  lg: "20px",
+                },
+              }}
+            >
+              Accept contactless and QR Code payments in just a blink.
+            </Typography>
+          </Box>
+          <Box
+            component={"figure"}
+            sx={{
+              width: {
+                xs: "220px",
+                lg: "290px",
+              },
+              height: {
+                xs: "220px",
+                lg: "290px",
+              },
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src={vposPhone}
+              alt="Demo"
+              style={{ height: "100%", maxWidth: "100%" }}
+            />
+          </Box>
+        </Box>
           <Box
             className={scrollStyles["small-box"]}
             sx={{
@@ -194,132 +275,6 @@ const ScrollBoxes = (): JSX.Element => {
               Empower your business, enable your consumer to pay conveniently
               simple.
             </Typography>
-          </Box>
-          <Box
-            className={scrollStyles["big-box"]}
-            sx={{
-              width: {
-                xs: "450px",
-                lg: "600px",
-              },
-              height: {
-                xs: "220px",
-                lg: "290px",
-              },
-            }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexDirection: "column",
-                width: {
-                  xs: "220px",
-                  lg: "290px",
-                },
-                height: {
-                  xs: "220px",
-                  lg: "290px",
-                },
-              }}
-            >
-              <Box
-                component={"figure"}
-                sx={{
-                  height: "40%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: "10px",
-                }}
-              >
-                <Image
-                  src={imgVpos}
-                  alt="Demo"
-                  style={{ maxHeight: "100%", maxWidth: "100%" }}
-                />
-              </Box>
-              <Typography
-                className={scrollStyles["box-text"]}
-                sx={{
-                  textAlign: "center",
-                  fontSize: {
-                    xs: "14px",
-                    lg: "20px",
-                  },
-                }}
-              >
-                Accept contactless and QR Code payments in just a blink.
-              </Typography>
-            </Box>
-            <Box
-              component={"figure"}
-              sx={{
-                width: {
-                  xs: "220px",
-                  lg: "290px",
-                },
-                height: {
-                  xs: "220px",
-                  lg: "290px",
-                },
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Image
-                src={vposPhone}
-                alt="Demo"
-                style={{ height: "100%", maxWidth: "100%" }}
-              />
-            </Box>
-          </Box>
-          <Box
-            className={scrollStyles["small-box"]}
-            sx={{
-              width: {
-                xs: "220px",
-                lg: "290px",
-              },
-              height: {
-                xs: "220px",
-                lg: "290px",
-              },
-              flexDirection: "column",
-              justifyContent: "space-between !important",
-              overflow: "hidden",
-            }}
-          >
-            <Typography
-              className={scrollStyles["box-text-2"]}
-              sx={{
-                fontSize: {
-                  xs: "11px !important",
-                  lg: "14px !important",
-                },
-                margin: "0 auto",
-              }}
-            >
-              Enable onsite multicurrency payments beyond the use of
-              credit/debit cards
-            </Typography>
-            <Box
-              component={"figure"}
-              sx={{
-                height: "80%",
-                display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "center",
-              }}
-            >
-              <Image
-                src={vposPhone3}
-                alt="Demo"
-                style={{ maxWidth: "85%", maxHeight: "100%" }}
-              />
-            </Box>
           </Box>
           <Box
             className={scrollStyles["small-box"]}
@@ -366,6 +321,51 @@ const ScrollBoxes = (): JSX.Element => {
               Use your Android/iOS mobile or tablet as a point of sales. No need
               to buy any hardware.
             </Typography>
+          </Box>
+          <Box
+            className={scrollStyles["small-box"]}
+            sx={{
+              width: {
+                xs: "220px",
+                lg: "290px",
+              },
+              height: {
+                xs: "220px",
+                lg: "290px",
+              },
+              flexDirection: "column",
+              justifyContent: "space-between !important",
+              overflow: "hidden",
+            }}
+          >
+            <Typography
+              className={scrollStyles["box-text-2"]}
+              sx={{
+                fontSize: {
+                  xs: "11px !important",
+                  lg: "14px !important",
+                },
+                margin: "0 auto",
+              }}
+            >
+              Enable onsite multicurrency payments beyond the use of
+              credit/debit cards
+            </Typography>
+            <Box
+              component={"figure"}
+              sx={{
+                height: "80%",
+                display: "flex",
+                alignItems: "flex-end",
+                justifyContent: "center",
+              }}
+            >
+              <Image
+                src={vposPhone3}
+                alt="Demo"
+                style={{ maxWidth: "85%", maxHeight: "100%" }}
+              />
+            </Box>
           </Box>
           <Box
             className={scrollStyles["small-box"]}

@@ -20,15 +20,16 @@ const BoxInfo = (): JSX.Element => {
           lg: "57px 0 0 0",
         },
         width: {
-          xs: "100%",
-          sm: "100%",
-          md: "100%",
-          lg: "40%",
-        },
+          xs: '100%',
+          sm: '100%',
+          md: '70%'
+        }
       }}
     >
-      <Typography className={clsx(home.title, landing.title)}>
-        Pay digitally simple
+      <Typography className={clsx(home.title, home.subtitle)}>
+        <span className={home.subtitle2}>The multichannel</span> platform that
+        unify{" "}
+        <span className={home.subtitle3}>billing & payments solutions</span>
       </Typography>
       <Typography
         className={home.text}
@@ -37,9 +38,8 @@ const BoxInfo = (): JSX.Element => {
           sm: 16,
         }}
       >
-        We empower your business. Payments made easy for your consumer. All
-        currencies and payment methods consolidated in one place with a
-        straightforward management and reporting interface.
+        Start accepting different payments methods for all your business
+        channels
       </Typography>
       <Button
         variant="contained"

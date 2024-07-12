@@ -9,18 +9,22 @@ import PaymentLink from "@/components/templates/landing/paymentLink";
 import VPOS from "@/components/templates/landing/VPOS";
 import WhyUs from "@/components/templates/landing/whyUs";
 import World from "@/components/templates/landing/world";
+import Integration from "@/components/templates/landing/integration";
+import WhatWeDo from "@/components/templates/landing/whatWeDo";
 
 const Landing = (): JSX.Element => {
   return (
     <div className={style.landing}>
       <Home />
+      <WhatWeDo />
+      <Integration />
       <OurProducts />
-      <VPOS />
-      <PaymentLink />
       <Gateway />
+      <PaymentLink />
+      <VPOS />
       <WhyUs />
       <World />
-      <Box sx={{ padding: "310px 35px 50px 35px" }}>
+      <Box sx={{ padding: "50px 35px 50px 35px" }}>
         <Footer />
       </Box>
     </div>
