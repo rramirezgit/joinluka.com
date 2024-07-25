@@ -69,7 +69,7 @@ const Integration = (): JSX.Element => {
           >
             We unify billing and payment solutions, giving you:
           </Typography>
-          <List sx={{ maxWidth: "600px" }}>
+          <List sx={{ maxWidth: "550px" }}>
             <ListItem
               sx={{
                 color: "var(--gray_text_dark) !important",
