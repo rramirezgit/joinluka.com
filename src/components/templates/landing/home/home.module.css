@@ -28,6 +28,7 @@
   color: var(--white) !important;
   letter-spacing: -0.02em;
   margin-top: 20px !important;
+  max-width: 650px;
 }
 
 .content-img {
@@ -80,15 +81,12 @@
   height: 643px;
 }
 .subtitle {
-  font-size: 45px !important;
   color: var(--white) !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
   line-height: 1.2em !important;
 }
-
 .subtitle2 {
-  font-size: 45px !important;
   color: var(--white) !important;
   font-weight: 400 !important;
   letter-spacing: -0.02em !important;
@@ -96,10 +94,8 @@
 }
 
 .subtitle3 {
-  font-size: 45px !important;
   color: var(--white) !important;
   font-weight: 700 !important;
-  text-decoration: underline;
   letter-spacing: -0.02em !important;
   line-height: 1.2em !important;
 }
@@ -126,18 +122,46 @@
     bottom: 81px;
   }
 
-  .triangle {
+  /* .triangle {
     clip-path: polygon(-74% 76%, 135% 14%, 799% 68%) !important;
-  }
+  } */
 }
 
-@media (max-width: 490px) {
+@media (min-width: 490px) and (max-width: 555px) {
   .animation {
     min-width: 806.57px;
     min-height: 354px;
-    bottom: 81px;
+    bottom: 190px !important;
   }
   .triangle {
-    clip-path: polygon(-159% 77%, 119% 12%, 801% 48%) !important;
+    height: 465px !important;
+    clip-path: polygon(-188% 106%, 230% 12%, 801% 48%) !important;
+  }
+}
+@media (min-width: 556px) and (max-width: 599px) {
+  .animation {
+    min-width: 806.57px;
+    min-height: 354px;
+    bottom: 190px !important;
+  }
+  .triangle {
+    height: 520px !important;
+    clip-path: polygon(-188% 106%, 230% 12%, 801% 48%) !important;
+  }
+}
+@media (min-width: 413px) and (max-width: 489px) {
+  .animation {
+    bottom: 165px !important;
+  }
+  .triangle {
+    height: 540px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 412px) {
+  .animation {
+    bottom: 165px !important;
+  }
+  .triangle {
+    height: 490px !important;
   }
 }

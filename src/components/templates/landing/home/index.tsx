@@ -20,16 +20,17 @@ const BoxInfo = (): JSX.Element => {
           lg: "57px 0 0 0",
         },
         width: {
-          xs: '100%',
-          sm: '100%',
-          md: '70%'
-        }
+          xs: "100%",
+          sm: "100%",
+          md: "70%",
+        },
       }}
     >
-      <Typography className={clsx(home.title, home.subtitle)}>
-        <span className={home.subtitle2}>The multichannel</span> platform that
-        unify{" "}
-        <span className={home.subtitle3}>billing & payments solutions</span>
+      <Typography className={clsx(home.title, home.subtitle)} sx={{ fontSize: { xs: '32px', sm: '45px' } }}>
+        <span className={home.subtitle2}>
+          Access all your payment providers through{" "}
+        </span>
+        <span className={home.subtitle3}>one single platform. </span>
       </Typography>
       <Typography
         className={home.text}
@@ -38,8 +39,8 @@ const BoxInfo = (): JSX.Element => {
           sm: 16,
         }}
       >
-        Start accepting different payments methods for all your business
-        channels
+        Empower your small or medium-sized business with a customizable,
+        all-in-one payment and billing solution
       </Typography>
       <Button
         variant="contained"
@@ -60,6 +61,7 @@ const BoxInfo = (): JSX.Element => {
             xs: "16px",
           },
           fontWeight: "600 !important",
+          display: 'none'
         }}
       >
         Contact us
@@ -74,7 +76,7 @@ const Home = (): JSX.Element => {
       className={home.content}
       sx={{
         height: {
-          xs: "796px",
+          xs: "720px",
           sm: "831px",
           md: "884px",
         },
@@ -113,9 +115,9 @@ const Home = (): JSX.Element => {
             className={home.triangle}
             sx={{
               clipPath: {
-                xs: "polygon(-34% 48%, 216% 4%, 801% 39%)",
-                sm: "polygon(-36% 77%, 143% -5%, 801% 67%)",
-                md: "polygon(-135% 127%, 124% 3%, 146% 112%)",
+                xs: "polygon(-135% 90%, 202% 4%, 801% 39%)",
+                sm: "polygon(-80% 85%, 143% -5%, 801% 67%)",
+                md: "polygon(-200% 127%, 124% 3%, 146% 112%)",
                 lg: "polygon(-78% 99%, 107% 1%, 135% 112%);",
                 xl: "polygon(-90% 114%, 106% 2%, 138% 100%)",
               },
