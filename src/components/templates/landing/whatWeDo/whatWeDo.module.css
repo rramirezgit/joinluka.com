@@ -19,12 +19,12 @@
 
 @media (min-width: 751px) and (max-width: 770px) {
   .whatwedo-text {
-    max-height: 340px !important;
+    max-height: 360px !important;
   }
 }
 
 @media (min-width: 771px) and (max-width: 800px) {
   .whatwedo-text {
-    max-height: 320px !important;
+    max-height: 340px !important;
   }
 }

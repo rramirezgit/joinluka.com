@@ -18,7 +18,5 @@
 }
 
 .subtitle {
-  font-size: 24px !important;
-  color: var(--dark_gray_text) !important;
-  font-weight: bold !important;
+  color: var(--primary_buttons) !important;
 }

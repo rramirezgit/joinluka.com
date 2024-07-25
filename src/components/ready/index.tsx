@@ -58,8 +58,7 @@ const Ready = ({ aboutUs = false }: aboutUsProps): JSX.Element => {
             sx={{
               fontSize: {
                 xs: "30.153px",
-                sm: "50.6667px",
-                md: "56.6667px",
+                md: "45px",
               },
             }}
           >
@@ -69,8 +68,7 @@ const Ready = ({ aboutUs = false }: aboutUsProps): JSX.Element => {
             classes={{ root: styles.subtitle }}
             sx={{
               fontSize: {
-                xs: "12px",
-                sm: "21.3333px",
+                xs: "20px",
                 md: "24px",
               },
             }}

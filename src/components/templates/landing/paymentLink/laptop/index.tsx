@@ -7,7 +7,7 @@ const Laptop = (): JSX.Element => {
       sx={{
         width: {
           xs: "100%",
-          lg: "780px",
+          lg: "680px",
         },
         position: "relative",
       }}

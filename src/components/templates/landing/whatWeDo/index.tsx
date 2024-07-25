@@ -67,7 +67,7 @@ const WhatWeDo = (): JSX.Element => {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "14px", lg: "20px" },
+              fontSize: { xs: "16px", lg: "20px" },
               maxWidth: { xs: "350px", md: "690px" },
             }}
             className={whatWeDoCSS.subtitle}

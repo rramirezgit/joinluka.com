@@ -34,13 +34,14 @@ const Gateway = (): JSX.Element => {
       >
         <Info
           textList={[
-            "Making payments seamless, your way!",
-            "Make the gateway say and look what you want. Integrate the solution in just a blink through our APIs.",
-            "Embed our solution and start processing multi currency payments with multiple payment methods.",
-            "Enjoy an easy to use web control panel to manage payment transactions",
+            "Integrate in minutes with our robust APIs",
+            "Process multi-currency payments with multiple methods",
+            "Customize the gateway's look and feel to match your brand",
+            "Manage transactions easily with our web control panel",
           ]}
           titleBlue="Gateway"
           title="Multi-Solution"
+          subtitleBlue="Making payments seamless, your way!"
           button={{
             text: "View Demo",
             color: "primary_a",
@@ -58,7 +59,7 @@ const Gateway = (): JSX.Element => {
           }}
           size={{
             xs: "85%",
-            lg: "400px",
+            lg: "570px",
             xl: "570px",
           }}
         />

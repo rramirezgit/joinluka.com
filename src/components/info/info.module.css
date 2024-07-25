@@ -3,6 +3,10 @@
   font-weight: bold !important;
 }
 
+.subtitle-blue {
+  color: var(--primary_buttons);
+}
+
 .title {
   color: var(--dark_gray_text) !important;
   font-weight: bold !important;

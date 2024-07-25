@@ -34,7 +34,7 @@ const VPOS = (): JSX.Element => {
             lg: "space-between !important",
           },
           maxWidth: "1370px",
-          padding: '0 60px'
+          padding: "0 60px",
         }}
       >
         <Box
@@ -87,8 +87,11 @@ const VPOS = (): JSX.Element => {
               Hardware Free
             </Typography>
           </Box>
-          <Typography className={vposStyles.subtitle}>
-            Download, sign up, receive payments, that’s it!
+          <Typography
+            className={vposStyles.subtitle}
+            sx={{ fontSize: { xs: "18px", sm: "22px" } }}
+          >
+            Transform any device into a powerful point of sale
           </Typography>
           <Box
             sx={{
@@ -109,18 +112,19 @@ const VPOS = (): JSX.Element => {
           >
             <CustomListItem
               text={
-                "The solutions Luka offers to our current clients may support many businesses in need to simplify digital payments management, regardless of location."
+                "No hardware required - use your existing smartphone or tablet"
               }
             />
             <CustomListItem
-              text={
-                "Fit for an international purpose. We are already transacting in multiple currencies and enabled international payment methods."
-              }
+              text={"Accept contactless and QR code payments instantly"}
             />
             <CustomListItem
               text={
-                "Our team has a solid track record implementing and executing payment solutions in an intercontinental landscape."
+                "Scale from a single VPOS to a custom cluster of points of sale"
               }
+            />
+            <CustomListItem
+              text={"Ideal for both physical stores and on-the-go businesses"}
             />
           </List>
           <MobileButtons />

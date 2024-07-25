@@ -53,11 +53,10 @@ const PaymentLink = (): JSX.Element => {
 
         <Info
           textList={[
-            "Receive and send payments, conveniently simple to everyone!",
-            "Request and execute payments enabling local & international payments methods",
-            "Use the messaging channel best for your business: SMS, WhatsApp, Telegram, email, social media or your app.",
-            "Make easy and friendly the way payments are experienced by your business users.",
-            "Benefit from an easy to use web control panel to manage your payment links.",
+            "Enable local & international payment methods and providers",
+            "Use any messaging channel: SMS, WhatsApp, email, social media, or your app",
+            "Simplify payment experiences for your customers",
+            "Manage all payment links from one intuitive dashboard",
           ]}
           tags={["INTEGRATION VIA API", "GLOBAL REACH", "MULTIPLE USE CASES"]}
           titleBlue="Payment Link"

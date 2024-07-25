@@ -25,9 +25,7 @@ const WhyUs = (): JSX.Element => {
         <Typography
           className={whyUsCSS.title}
           sx={{
-            fontSize: {
-              xs: "32px !important",
-            },
+            fontSize: { xs: "28px", sm: "32px" },
             textAlign: "center",
           }}
         >
@@ -36,10 +34,7 @@ const WhyUs = (): JSX.Element => {
         <Typography
           className={whyUsCSS.text}
           sx={{
-            fontSize: {
-              xs: "20px !important",
-              md: "24px !important",
-            },
+            fontSize: { xs: "18px", sm: "22px" },
             textAlign: "center",
             maxWidth: "850px",
             margin: "0 auto",

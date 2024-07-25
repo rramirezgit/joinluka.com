@@ -40,9 +40,7 @@ const OurProducts = (): JSX.Element => {
         <Typography
           className={ourProductsCSS.title}
           sx={{
-            fontSize: {
-              xs: "32px !important",
-            },
+            fontSize: { xs: "28px", sm: "32px" },
           }}
         >
           How it works
@@ -51,9 +49,7 @@ const OurProducts = (): JSX.Element => {
           className={ourProductsCSS.subtitle}
           sx={{
             marginBottom: "0px",
-            fontSize: {
-              xs: "16px !important",
-            },
+            fontSize: { xs: "18px", sm: "22px" },
           }}
         >
           We offer a product suite that can satisfy you business needs.
@@ -62,9 +58,7 @@ const OurProducts = (): JSX.Element => {
           className={ourProductsCSS.subtitle}
           sx={{
             marginBottom: "0px",
-            fontSize: {
-              xs: "16px !important",
-            },
+            fontSize: { xs: "18px", sm: "22px" },
           }}
         >
           A Multi-Payment method Gateway to improve your WEB site. A SDK for
@@ -74,9 +68,7 @@ const OurProducts = (): JSX.Element => {
         <Typography
           className={ourProductsCSS.subtitle}
           sx={{
-            fontSize: {
-              xs: "16px !important",
-            },
+            fontSize: { xs: "18px", sm: "22px" },
           }}
         >
           All together in one single platform

@@ -9,7 +9,6 @@
 
 .toptitle {
   font-weight: 600 !important;
-  font-size: 24px !important;
   color: var(--aqua_blue) !important;
   margin-bottom: 20px !important;
 }
@@ -18,20 +17,23 @@
   font-weight: 700 !important;
   color: var(--dark_gray_text) !important;
   margin-bottom: 20px !important;
-  font-size: 32px !important;
   line-height: 120% !important;
 }
 
 .subtitle {
   font-weight: 400 !important;
-  color: var(--dark_gray_text) !important;
-  font-size: 20px !important;
+  color: var(--gray_text_dark) !important;
   line-height: 150% !important;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1300px) {
   .integration-img-container {
-    margin-top: 350px !important;
+    margin-top: 550px !important;
+    align-items: center;
+  }
+  .integration-img {
+    width: 100%;
+    padding: 0px 20px;
   }
 }
 

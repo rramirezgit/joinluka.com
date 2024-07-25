@@ -8,6 +8,7 @@ interface InfoProps {
   tags?: string[];
   subtitle?: string;
   titleBlue: string;
+  subtitleBlue?: string;
   title: string;
   button?: {
     text: string;
@@ -28,6 +29,7 @@ const Info = ({
   tags = [],
   titleBlue,
   title,
+  subtitleBlue,
   subtitle = "",
   button = null,
   size,
@@ -50,9 +52,7 @@ const Info = ({
             root: style.title,
           }}
           sx={{
-            fontSize: {
-              xs: "32px",
-            },
+            fontSize: { xs: "28px", sm: "32px" },
             marginBottom: '-8px !important'
           }}
         >
@@ -63,12 +63,20 @@ const Info = ({
             root: style["title-blue"],
           }}
           sx={{
-            fontSize: {
-              xs: "32px",
-            },
+            fontSize: { xs: "28px", sm: "32px" },
           }}
         >
           {titleBlue}
+        </Typography>
+        <Typography
+          classes={{
+            root: style["subtitle-blue"],
+          }}
+          sx={{
+            fontSize: { xs: "18px", sm: "22px" },
+          }}
+        >
+          {subtitleBlue}
         </Typography>
       </Box>
       {subtitle.length > 0 && (
