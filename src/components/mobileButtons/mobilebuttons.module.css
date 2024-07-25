@@ -9,3 +9,10 @@
     margin-bottom: 20px;
     cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  .mobile-buttons-container {
+    align-items: center;
+    justify-content: center;
+  }
+}

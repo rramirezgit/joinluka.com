@@ -91,13 +91,13 @@ const WhyUs = (): JSX.Element => {
             },
           }}
         >
-          <Square
+          {/* <Square
             color="#5AE1E230"
             top={"-180"}
             left={"-180"}
             maxHeight={280}
             maxWidth={220}
-          />
+          /> */}
         </Box>
         <Box
           sx={{
@@ -110,7 +110,7 @@ const WhyUs = (): JSX.Element => {
           }}
         ></Box>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           display: {
             xs: "none",
@@ -125,8 +125,8 @@ const WhyUs = (): JSX.Element => {
           maxHeight={300}
           maxWidth={160}
         />
-      </Box>
-      <Square
+      </Box> */}
+      {/* <Square
         color="#5AE1E230"
         top={"0"}
         left={"0"}
@@ -139,7 +139,7 @@ const WhyUs = (): JSX.Element => {
         right={"0"}
         maxHeight={160}
         maxWidth={130}
-      />
+      /> */}
     </Box>
   );
 };

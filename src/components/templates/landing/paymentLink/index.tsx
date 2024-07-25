@@ -61,6 +61,7 @@ const PaymentLink = (): JSX.Element => {
           tags={["INTEGRATION VIA API", "GLOBAL REACH", "MULTIPLE USE CASES"]}
           titleBlue="Payment Link"
           title="In&Out"
+          subtitleBlue="Receive and send payments with unparalleled convenience"
           button={{
             text: "View Demo",
             color: "primary_a",

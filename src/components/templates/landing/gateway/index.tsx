@@ -58,7 +58,7 @@ const Gateway = (): JSX.Element => {
             },
           }}
           size={{
-            xs: "85%",
+            xs: "100%",
             lg: "570px",
             xl: "570px",
           }}

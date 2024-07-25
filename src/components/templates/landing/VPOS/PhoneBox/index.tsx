@@ -11,7 +11,8 @@ const PhoneBox = (): JSX.Element => {
       sx={{
         display: "flex",
         width: "100%",
-        justifyContent: 'center'
+        justifyContent: 'center',
+        padding: '0 30px'
       }}
     >
       <Box

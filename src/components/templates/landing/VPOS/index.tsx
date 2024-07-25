@@ -34,7 +34,7 @@ const VPOS = (): JSX.Element => {
             lg: "space-between !important",
           },
           maxWidth: "1370px",
-          padding: "0 60px",
+          padding: "0 30px",
         }}
       >
         <Box

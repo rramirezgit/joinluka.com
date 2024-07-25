@@ -21,7 +21,6 @@
 }
 
 .subtitle {
-  font-weight: 400 !important;
   color: var(--gray_text_dark) !important;
   line-height: 150% !important;
 }
