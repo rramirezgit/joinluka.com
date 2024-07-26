@@ -17,14 +17,26 @@
   color: var(--white) !important;
 }
 
-@media (min-width: 751px) and (max-width: 770px) {
+@media (min-width: 0px) and (max-width: 999px) {
   .whatwedo-text {
-    max-height: 360px !important;
+    max-height: auto !important;
   }
 }
 
-@media (min-width: 771px) and (max-width: 800px) {
+/* @media (min-width: 301px) and (max-width: 999px) {
   .whatwedo-text {
-    max-height: 340px !important;
+    max-height: 380px !important;
+  }
+} */
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .whatwedo-text {
+    max-height: 320px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .whatwedo-text {
+    max-height: 280px !important;
   }
 }

@@ -39,10 +39,6 @@ const WhatWeDo = (): JSX.Element => {
           marginBottom: "40px",
           overflow: "hidden",
           maxWidth: "1335px",
-          maxHeight: {
-            xs: "auto",
-            sd: "280px",
-          },
           padding: {
             xs: "40px 30px 30px 30px",
             sd: "60px",
@@ -67,7 +63,7 @@ const WhatWeDo = (): JSX.Element => {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "16px", lg: "20px" },
+              fontSize: { xs: "18px", sm: "22px" },
               maxWidth: { xs: "350px", md: "690px" },
             }}
             className={whatWeDoCSS.subtitle}
@@ -82,7 +78,7 @@ const WhatWeDo = (): JSX.Element => {
           sx={{
             marginLeft: "10px",
             marginTop: { xs: "10px", sd: "0px" },
-            height: { xs: "auto", sd: "250px", md: "350px" },
+            height: { xs: "auto", sd: "350px" },
           }}
         >
           <Image
