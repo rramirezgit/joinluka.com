@@ -7,7 +7,7 @@ const cardsArray: CardInterface[] = [
   {
     id: "gateway-box-id",
     idCard: "gateway-card-id",
-    title: "Multi Currency Gateway",
+    title: "Multi Solution Gateway",
     text: "B2B Payment gateway embedded solution. Manages multi currency and multi payment methods with an online conciliation dashboard.",
     imageUrl: image1,
   },
